@@ -1,0 +1,62 @@
+p {
+    color:blue !important;
+    background-color:yellow;
+}
+
+#texto {
+    visibility: hidden;
+}
+
+
+
+#uno {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#uno:active {
+    flex-direction: row-reverse;
+}
+
+.sombra {
+    visibility: hidden;
+    display: none;
+    transform: skew(-15deg, -15deg);
+}
+
+img {
+    width: 100%;
+}
+
+#dos {
+    margin: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen:active{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    
+
+}
+
+h2:hover {
+    transform: scale(1.2);
+    
+}
+
+
+
+@media screen and (max-width: 549px) {
+    * {
+        display: none;
+        visibility: hidden;
+    }
+
+    #texto {
+        visibility: visible;
+    }
+}
